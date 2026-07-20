@@ -1,0 +1,13 @@
+
+# Hand labelled subset of LINZ (cyclone gabrielle aerial imagery)
+CG_250m/
+
+#small subset of Gisborne area to test the models cross-regional regularization
+Gisborne_250m/
+
+
+env/
+__pycache__/**/*
+cache/
+
+*.tif
