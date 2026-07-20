@@ -1,13 +1,33 @@
 
-# Hand labelled subset of LINZ (cyclone gabrielle aerial imagery)
+# Local datasets and generated artifacts
 CG_250m/
-
-#small subset of Gisborne area to test the models cross-regional regularization
 Gisborne_250m/
 
-
+# Python environments and bytecode
+.venv/
+venv/
 env/
-__pycache__/**/*
-cache/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
 
+# Caches and temporary outputs
+cache/
+.cache/
+
+# Model checkpoints and other large binary artifacts
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Plots, overlays, and run outputs
+bm_plots/
+gradcam_overlays/
+results/
+torchGeo_plots/
+
+# Raster and imagery files
 *.tif
+*.tiff
