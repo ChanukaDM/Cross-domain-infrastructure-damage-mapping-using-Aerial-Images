@@ -1,0 +1,329 @@
+{
+  "accuracy": 0.9531,
+  "precision": 0.9184,
+  "recall": 0.9574,
+  "f1": 0.9375,
+  "TP": 45,
+  "TN": 77,
+  "FP": 4,
+  "FN": 2,
+  "total": 128,
+  "n_no_damage": 81,
+  "n_damaged": 47,
+  "unit": "250m_crop",
+  "dataset": "LINZ_cyclone_gabrielle_test",
+  "model": "densenet121_xbd_kd",
+  "weights": "densenet121_xbd_kd_best.pth",
+  "roc_auc": 0.9908,
+  "average_precision": 0.9821,
+  "operating_threshold": 0.7342,
+  "operating_threshold_source": "ckpt youden_j",
+  "operating_point": {
+    "accuracy": 0.9375,
+    "precision": 0.9756,
+    "recall": 0.8511,
+    "f1": 0.9091,
+    "TP": 40,
+    "TN": 80,
+    "FP": 1,
+    "FN": 7,
+    "total": 128
+  },
+  "confusion_matrix_at_operating_point": {
+    "TN": 80,
+    "FP": 1,
+    "FN": 7,
+    "TP": 40
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.05,
+      "accuracy": 0.3906,
+      "precision": 0.376,
+      "recall": 1.0,
+      "f1": 0.5465,
+      "TP": 47,
+      "TN": 3,
+      "FP": 78,
+      "FN": 0,
+      "total": 128
+    },
+    {
+      "threshold": 0.1,
+      "accuracy": 0.5,
+      "precision": 0.4234,
+      "recall": 1.0,
+      "f1": 0.5949,
+      "TP": 47,
+      "TN": 17,
+      "FP": 64,
+      "FN": 0,
+      "total": 128
+    },
+    {
+      "threshold": 0.15,
+      "accuracy": 0.7109,
+      "precision": 0.5595,
+      "recall": 1.0,
+      "f1": 0.7176,
+      "TP": 47,
+      "TN": 44,
+      "FP": 37,
+      "FN": 0,
+      "total": 128
+    },
+    {
+      "threshold": 0.2,
+      "accuracy": 0.8516,
+      "precision": 0.7121,
+      "recall": 1.0,
+      "f1": 0.8319,
+      "TP": 47,
+      "TN": 62,
+      "FP": 19,
+      "FN": 0,
+      "total": 128
+    },
+    {
+      "threshold": 0.25,
+      "accuracy": 0.9062,
+      "precision": 0.7966,
+      "recall": 1.0,
+      "f1": 0.8868,
+      "TP": 47,
+      "TN": 69,
+      "FP": 12,
+      "FN": 0,
+      "total": 128
+    },
+    {
+      "threshold": 0.3,
+      "accuracy": 0.9219,
+      "precision": 0.8246,
+      "recall": 1.0,
+      "f1": 0.9038,
+      "TP": 47,
+      "TN": 71,
+      "FP": 10,
+      "FN": 0,
+      "total": 128
+    },
+    {
+      "threshold": 0.35,
+      "accuracy": 0.9531,
+      "precision": 0.8868,
+      "recall": 1.0,
+      "f1": 0.94,
+      "TP": 47,
+      "TN": 75,
+      "FP": 6,
+      "FN": 0,
+      "total": 128
+    },
+    {
+      "threshold": 0.4,
+      "accuracy": 0.9531,
+      "precision": 0.902,
+      "recall": 0.9787,
+      "f1": 0.9388,
+      "TP": 46,
+      "TN": 76,
+      "FP": 5,
+      "FN": 1,
+      "total": 128
+    },
+    {
+      "threshold": 0.45,
+      "accuracy": 0.9609,
+      "precision": 0.92,
+      "recall": 0.9787,
+      "f1": 0.9485,
+      "TP": 46,
+      "TN": 77,
+      "FP": 4,
+      "FN": 1,
+      "total": 128
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9531,
+      "precision": 0.9184,
+      "recall": 0.9574,
+      "f1": 0.9375,
+      "TP": 45,
+      "TN": 77,
+      "FP": 4,
+      "FN": 2,
+      "total": 128
+    },
+    {
+      "threshold": 0.55,
+      "accuracy": 0.9609,
+      "precision": 0.9565,
+      "recall": 0.9362,
+      "f1": 0.9462,
+      "TP": 44,
+      "TN": 79,
+      "FP": 2,
+      "FN": 3,
+      "total": 128
+    },
+    {
+      "threshold": 0.6,
+      "accuracy": 0.9375,
+      "precision": 0.9535,
+      "recall": 0.8723,
+      "f1": 0.9111,
+      "TP": 41,
+      "TN": 79,
+      "FP": 2,
+      "FN": 6,
+      "total": 128
+    },
+    {
+      "threshold": 0.65,
+      "accuracy": 0.9375,
+      "precision": 0.9535,
+      "recall": 0.8723,
+      "f1": 0.9111,
+      "TP": 41,
+      "TN": 79,
+      "FP": 2,
+      "FN": 6,
+      "total": 128
+    },
+    {
+      "threshold": 0.7,
+      "accuracy": 0.9375,
+      "precision": 0.9756,
+      "recall": 0.8511,
+      "f1": 0.9091,
+      "TP": 40,
+      "TN": 80,
+      "FP": 1,
+      "FN": 7,
+      "total": 128
+    },
+    {
+      "threshold": 0.75,
+      "accuracy": 0.9297,
+      "precision": 0.975,
+      "recall": 0.8298,
+      "f1": 0.8966,
+      "TP": 39,
+      "TN": 80,
+      "FP": 1,
+      "FN": 8,
+      "total": 128
+    },
+    {
+      "threshold": 0.8,
+      "accuracy": 0.9297,
+      "precision": 0.975,
+      "recall": 0.8298,
+      "f1": 0.8966,
+      "TP": 39,
+      "TN": 80,
+      "FP": 1,
+      "FN": 8,
+      "total": 128
+    },
+    {
+      "threshold": 0.85,
+      "accuracy": 0.9141,
+      "precision": 0.9737,
+      "recall": 0.7872,
+      "f1": 0.8706,
+      "TP": 37,
+      "TN": 80,
+      "FP": 1,
+      "FN": 10,
+      "total": 128
+    },
+    {
+      "threshold": 0.9,
+      "accuracy": 0.8672,
+      "precision": 0.9688,
+      "recall": 0.6596,
+      "f1": 0.7848,
+      "TP": 31,
+      "TN": 80,
+      "FP": 1,
+      "FN": 16,
+      "total": 128
+    },
+    {
+      "threshold": 0.95,
+      "accuracy": 0.8125,
+      "precision": 1.0,
+      "recall": 0.4894,
+      "f1": 0.6571,
+      "TP": 23,
+      "TN": 81,
+      "FP": 0,
+      "FN": 24,
+      "total": 128
+    }
+  ],
+  "best_f1_operating_point": {
+    "threshold": 0.45,
+    "accuracy": 0.9609,
+    "precision": 0.92,
+    "recall": 0.9787,
+    "f1": 0.9485,
+    "TP": 46,
+    "TN": 77,
+    "FP": 4,
+    "FN": 1,
+    "total": 128
+  },
+  "best_fbeta_operating_point": {
+    "beta": 2.0,
+    "threshold": 0.35,
+    "accuracy": 0.9531,
+    "precision": 0.8868,
+    "recall": 1.0,
+    "f1": 0.94,
+    "TP": 47,
+    "TN": 75,
+    "FP": 6,
+    "FN": 0,
+    "total": 128
+  },
+  "false_negatives": [
+    {
+      "crop": "damaged/2161_x1911053_y5625585.tif",
+      "p_damaged": 0.3633
+    },
+    {
+      "crop": "damaged/3536_x1918553_y5623585.tif",
+      "p_damaged": 0.499
+    },
+    {
+      "crop": "damaged/200_x1889553_y5568585.tif",
+      "p_damaged": 0.5176
+    },
+    {
+      "crop": "damaged/2294_x1912053_y5627085.tif",
+      "p_damaged": 0.5594
+    },
+    {
+      "crop": "damaged/2805_x1915053_y5624085.tif",
+      "p_damaged": 0.5679
+    },
+    {
+      "crop": "damaged/8229_x1985053_y5685585.tif",
+      "p_damaged": 0.5756
+    },
+    {
+      "crop": "damaged/8188_x1984553_y5684585.tif",
+      "p_damaged": 0.6619
+    }
+  ],
+  "false_positives": [
+    {
+      "crop": "no_damage/1308_x1903053_y5578085.tif",
+      "p_damaged": 0.9199
+    }
+  ]
+}
