@@ -45,17 +45,17 @@ Hand-labelled subset used for fine-tuning and testing:
 
 | Post (2023) | Pre (2021-22) | Grad-CAM: DenseNet121<br>(250 m x 250 m crop) | Grad-CAM: Swin-V2 NAIP<br>(250 m x 250 m crop) |
 |:---:|:---:|:---:|:---:|
-| <img src="docs/examples/dmg1_post.tif" width="180"> | <img src="docs/examples/dmg1_pre.tif" width="180"> | <img src="docs/examples/dmg1_cam_densenet.png" width="180"> | <img src="docs/examples/dmg1_cam_swin.png" width="180"> |
-| <img src="docs/examples/dmg2_post.tif" width="180"> | <img src="docs/examples/dmg2_pre.tif" width="180"> | <img src="docs/examples/dmg2_cam_densenet.png" width="180"> | <img src="docs/examples/dmg2_cam_swin.png" width="180"> |
-| <img src="docs/examples/dmg3_post.tif" width="180"> | <img src="docs/examples/dmg3_pre.tif" width="180"> | <img src="docs/examples/dmg3_cam_densenet.png" width="180"> | <img src="docs/examples/dmg3_cam_swin.png" width="180"> |
+| <img src="docs/examples/dmg1_post.png" width="180"> | <img src="docs/examples/dmg1_pre.png" width="180"> | <img src="docs/examples/dmg1_cam_densenet.png" width="180"> | <img src="docs/examples/dmg1_cam_swin.png" width="180"> |
+| <img src="docs/examples/dmg2_post.png" width="180"> | <img src="docs/examples/dmg2_pre.png" width="180"> | <img src="docs/examples/dmg2_cam_densenet.png" width="180"> | <img src="docs/examples/dmg2_cam_swin.png" width="180"> |
+| <img src="docs/examples/dmg3_post.png" width="180"> | <img src="docs/examples/dmg3_pre.png" width="180"> | <img src="docs/examples/dmg3_cam_densenet.png" width="180"> | <img src="docs/examples/dmg3_cam_swin.png" width="180"> |
 
 **No-damage cases**
 
 | Post (2023) | Pre (2021-22) | Grad-CAM: DenseNet121<br>(250 m x 250 m crop) | Grad-CAM: Swin-V2 NAIP<br>(250 m x 250 m crop) |
 |:---:|:---:|:---:|:---:|
-| <img src="docs/examples/nod1_post.tif" width="180"> | <img src="docs/examples/nod1_pre.tif" width="180"> | <img src="docs/examples/nod1_cam_densenet.png" width="180"> | <img src="docs/examples/nod1_cam_swin.png" width="180"> |
-| <img src="docs/examples/nod2_post.tif" width="180"> | <img src="docs/examples/nod2_pre.tif" width="180"> | <img src="docs/examples/nod2_cam_densenet.png" width="180"> | <img src="docs/examples/nod2_cam_swin.png" width="180"> |
-| <img src="docs/examples/nod3_post.tif" width="180"> | <img src="docs/examples/nod3_pre.tif" width="180"> | <img src="docs/examples/nod3_cam_densenet.png" width="180"> | <img src="docs/examples/nod3_cam_swin.png" width="180"> |
+| <img src="docs/examples/nod1_post.png" width="180"> | <img src="docs/examples/nod1_pre.png" width="180"> | <img src="docs/examples/nod1_cam_densenet.png" width="180"> | <img src="docs/examples/nod1_cam_swin.png" width="180"> |
+| <img src="docs/examples/nod2_post.png" width="180"> | <img src="docs/examples/nod2_pre.png" width="180"> | <img src="docs/examples/nod2_cam_densenet.png" width="180"> | <img src="docs/examples/nod2_cam_swin.png" width="180"> |
+| <img src="docs/examples/nod3_post.png" width="180"> | <img src="docs/examples/nod3_pre.png" width="180"> | <img src="docs/examples/nod3_cam_densenet.png" width="180"> | <img src="docs/examples/nod3_cam_swin.png" width="180"> |
 
 <!-- Put the tiles and Grad-CAM overlays in docs/examples/ with the names above.
      Two Grad-CAM columns per row: DenseNet121 (student) and Swin-V2 NAIP (teacher),
@@ -191,17 +191,17 @@ Hand-labelled subset used for fine-tuning and testing:
 
 | Post (2023) | Pre (2021-22) | Grad-CAM: DenseNet121<br>(250 m x 250 m crop) | Grad-CAM: Swin-V2 NAIP<br>(250 m x 250 m crop) |
 |:---:|:---:|:---:|:---:|
-| <img src="docs/examples/dmg1_post.tif" width="180"> | <img src="docs/examples/dmg1_pre.tif" width="180"> | <img src="docs/examples/dmg1_cam_densenet.png" width="180"> | <img src="docs/examples/dmg1_cam_swin.png" width="180"> |
-| <img src="docs/examples/dmg2_post.tif" width="180"> | <img src="docs/examples/dmg2_pre.tif" width="180"> | <img src="docs/examples/dmg2_cam_densenet.png" width="180"> | <img src="docs/examples/dmg2_cam_swin.png" width="180"> |
-| <img src="docs/examples/dmg3_post.tif" width="180"> | <img src="docs/examples/dmg3_pre.tif" width="180"> | <img src="docs/examples/dmg3_cam_densenet.png" width="180"> | <img src="docs/examples/dmg3_cam_swin.png" width="180"> |
+| <img src="docs/examples/dmg1_post.png" width="180"> | <img src="docs/examples/dmg1_pre.png" width="180"> | <img src="docs/examples/dmg1_cam_densenet.png" width="180"> | <img src="docs/examples/dmg1_cam_swin.png" width="180"> |
+| <img src="docs/examples/dmg2_post.png" width="180"> | <img src="docs/examples/dmg2_pre.png" width="180"> | <img src="docs/examples/dmg2_cam_densenet.png" width="180"> | <img src="docs/examples/dmg2_cam_swin.png" width="180"> |
+| <img src="docs/examples/dmg3_post.png" width="180"> | <img src="docs/examples/dmg3_pre.png" width="180"> | <img src="docs/examples/dmg3_cam_densenet.png" width="180"> | <img src="docs/examples/dmg3_cam_swin.png" width="180"> |
 
 **No-damage cases**
 
 | Post (2023) | Pre (2021-22) | Grad-CAM: DenseNet121<br>(250 m x 250 m crop) | Grad-CAM: Swin-V2 NAIP<br>(250 m x 250 m crop) |
 |:---:|:---:|:---:|:---:|
-| <img src="docs/examples/nod1_post.tif" width="180"> | <img src="docs/examples/nod1_pre.tif" width="180"> | <img src="docs/examples/nod1_cam_densenet.png" width="180"> | <img src="docs/examples/nod1_cam_swin.png" width="180"> |
-| <img src="docs/examples/nod2_post.tif" width="180"> | <img src="docs/examples/nod2_pre.tif" width="180"> | <img src="docs/examples/nod2_cam_densenet.png" width="180"> | <img src="docs/examples/nod2_cam_swin.png" width="180"> |
-| <img src="docs/examples/nod3_post.tif" width="180"> | <img src="docs/examples/nod3_pre.tif" width="180"> | <img src="docs/examples/nod3_cam_densenet.png" width="180"> | <img src="docs/examples/nod3_cam_swin.png" width="180"> |
+| <img src="docs/examples/nod1_post.png" width="180"> | <img src="docs/examples/nod1_pre.png" width="180"> | <img src="docs/examples/nod1_cam_densenet.png" width="180"> | <img src="docs/examples/nod1_cam_swin.png" width="180"> |
+| <img src="docs/examples/nod2_post.png" width="180"> | <img src="docs/examples/nod2_pre.png" width="180"> | <img src="docs/examples/nod2_cam_densenet.png" width="180"> | <img src="docs/examples/nod2_cam_swin.png" width="180"> |
+| <img src="docs/examples/nod3_post.png" width="180"> | <img src="docs/examples/nod3_pre.png" width="180"> | <img src="docs/examples/nod3_cam_densenet.png" width="180"> | <img src="docs/examples/nod3_cam_swin.png" width="180"> |
 
 <!-- Put the tiles and Grad-CAM overlays in docs/examples/ with the names above.
      Two Grad-CAM columns per row: DenseNet121 (student) and Swin-V2 NAIP (teacher),

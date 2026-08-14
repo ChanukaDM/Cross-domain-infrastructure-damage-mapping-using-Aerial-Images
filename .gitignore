@@ -31,4 +31,3 @@ torchGeo_plots/
 # Raster and imagery files
 *.tif
 *.tiff
-!docs/examples/*.tif
