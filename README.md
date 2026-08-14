@@ -23,7 +23,7 @@ This project asks two questions:
 
 | | |
 |---|---|
-| Source | LINZ open aerial imagery (CC BY 4.0) |
+| Source | Land Information New Zealand Data services (CC BY 4.0) |
 | Pre-event | Hawke's Bay rural aerial, 2021-2022, 0.3 m/px |
 | Post-event | Cyclone Gabrielle, 2023, 0.1 m/px |
 | Tiling | 500 m x 500 m grid, WMTS streaming (QGIS + GDAL/rasterio); 250 m x 250 m central crops for the labelled set |
@@ -43,23 +43,24 @@ Hand-labelled subset used for fine-tuning and testing:
 
 **Damaged cases**
 
-| Post (2023) | Pre (2021-22) | Grad-CAM activation |
-|:---:|:---:|:---:|
-| <img src="docs/examples/dmg1_post.jpg" width="200"> | <img src="docs/examples/dmg1_pre.jpg" width="200"> | <img src="docs/examples/dmg1_cam.png" width="200"> |
-| <img src="docs/examples/dmg2_post.jpg" width="200"> | <img src="docs/examples/dmg2_pre.jpg" width="200"> | <img src="docs/examples/dmg2_cam.png" width="200"> |
-| <img src="docs/examples/dmg3_post.jpg" width="200"> | <img src="docs/examples/dmg3_pre.jpg" width="200"> | <img src="docs/examples/dmg3_cam.png" width="200"> |
+| Post (2023) | Pre (2021-22) | Grad-CAM: DenseNet121<br>(250 m x 250 m crop) | Grad-CAM: Swin-V2 NAIP<br>(250 m x 250 m crop) |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/examples/dmg1_post.tif" width="180"> | <img src="docs/examples/dmg1_pre.tif" width="180"> | <img src="docs/examples/dmg1_cam_densenet.png" width="180"> | <img src="docs/examples/dmg1_cam_swin.png" width="180"> |
+| <img src="docs/examples/dmg2_post.tif" width="180"> | <img src="docs/examples/dmg2_pre.tif" width="180"> | <img src="docs/examples/dmg2_cam_densenet.png" width="180"> | <img src="docs/examples/dmg2_cam_swin.png" width="180"> |
+| <img src="docs/examples/dmg3_post.tif" width="180"> | <img src="docs/examples/dmg3_pre.tif" width="180"> | <img src="docs/examples/dmg3_cam_densenet.png" width="180"> | <img src="docs/examples/dmg3_cam_swin.png" width="180"> |
 
 **No-damage cases**
 
-| Post (2023) | Pre (2021-22) | Grad-CAM activation |
-|:---:|:---:|:---:|
-| <img src="docs/examples/nod1_post.jpg" width="200"> | <img src="docs/examples/nod1_pre.jpg" width="200"> | <img src="docs/examples/nod1_cam.png" width="200"> |
-| <img src="docs/examples/nod2_post.jpg" width="200"> | <img src="docs/examples/nod2_pre.jpg" width="200"> | <img src="docs/examples/nod2_cam.png" width="200"> |
-| <img src="docs/examples/nod3_post.jpg" width="200"> | <img src="docs/examples/nod3_pre.jpg" width="200"> | <img src="docs/examples/nod3_cam.png" width="200"> |
+| Post (2023) | Pre (2021-22) | Grad-CAM: DenseNet121<br>(250 m x 250 m crop) | Grad-CAM: Swin-V2 NAIP<br>(250 m x 250 m crop) |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/examples/nod1_post.tif" width="180"> | <img src="docs/examples/nod1_pre.tif" width="180"> | <img src="docs/examples/nod1_cam_densenet.png" width="180"> | <img src="docs/examples/nod1_cam_swin.png" width="180"> |
+| <img src="docs/examples/nod2_post.tif" width="180"> | <img src="docs/examples/nod2_pre.tif" width="180"> | <img src="docs/examples/nod2_cam_densenet.png" width="180"> | <img src="docs/examples/nod2_cam_swin.png" width="180"> |
+| <img src="docs/examples/nod3_post.tif" width="180"> | <img src="docs/examples/nod3_pre.tif" width="180"> | <img src="docs/examples/nod3_cam_densenet.png" width="180"> | <img src="docs/examples/nod3_cam_swin.png" width="180"> |
 
-<!-- Put the six pre/post tiles and their Grad-CAM overlays in docs/examples/ with the names above.
-     The Grad-CAM column shows where the model looks: it should sit on the real damage
-     for the damaged rows and stay quiet for the no-damage rows. -->
+<!-- Put the tiles and Grad-CAM overlays in docs/examples/ with the names above.
+     Two Grad-CAM columns per row: DenseNet121 (student) and Swin-V2 NAIP (teacher),
+     both on the 250 m x 250 m crop. They show where each model looks: on the real
+     damage for the damaged rows, and quiet for the no-damage rows. -->
 
 ---
 
