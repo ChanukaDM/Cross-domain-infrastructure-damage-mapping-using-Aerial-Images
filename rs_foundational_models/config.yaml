@@ -1,0 +1,47 @@
+
+# Pooled labelled LINZ pairs used for stratified K-fold CV
+data:
+  dirs:
+    - /nesi/nobackup/massey04767/CG_250m/train
+    - /nesi/nobackup/massey04767/CG_250m/hold
+
+# Where results / checkpoints / plots are written
+output:
+  results_csv:    benchmark_results.csv
+  results_json:   benchmark_results.json
+  checkpoint_dir: checkpoints
+  plots_dir:      plots
+
+# Backbones to benchmark. Use "all" for every model in the registry,
+# or list a subset by registry name, e.g.:
+#   models:
+#     - resnet50_fmow_rgb
+#     - swin_v2_b_satlas_naip
+models: all
+
+training:
+  n_folds:         5
+  epochs:          30        # per fold
+  aug_factor:      5         # x augmented copies per training crop
+  batch_size:      16
+  learning_rate:   1.0e-4
+  freeze_backbone: true      # benchmark protocol: train only the 6-ch stem + head
+  seed:            42
+  num_workers:     4
+
+evaluation:
+  fbeta: 2.0                 # recall-weighted operating point (missed damage costs more; F2 weights recall 2x)
+
+device: auto                 # auto | cuda | cpu
+
+
+loss:
+  type: focal_dice  # cross_entropy | focal | dice | focal_dice
+  class_weighting: true
+  focal:
+    gamma: 2.0               # >0 focuses learning on hard / minority examples
+  dice:
+    smooth: 1.0              # Laplace smoothing for the soft-Dice denominator
+  combo:                     # used only when type: focal_dice
+    focal_weight: 1.0
+    dice_weight:  1.0
