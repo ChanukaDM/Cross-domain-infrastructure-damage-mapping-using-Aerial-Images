@@ -46,7 +46,7 @@ Hand-labelled subset used for fine-tuning and testing:
 | Post (2023) | Pre (2021-22) | Grad-CAM: DenseNet121<br>(250 m x 250 m crop) | Grad-CAM: Swin-V2 NAIP<br>(250 m x 250 m crop) |
 |:---:|:---:|:---:|:---:|
 | <img src="docs/examples/dmg1_post.png" width="180"> | <img src="docs/examples/dmg1_pre.png" width="180"> | <img src="docs/examples/dmg1_cam_densenet.png" width="180"> | <img src="docs/examples/dmg1_cam_swin.png" width="180"> |
-| <img src="docs/examples/dmg2_post.png" width="180"> | <img src="docs/examples/dmg2_pre.png" width="180"> | <img src="docs/examples/dmg2_cam_densenet.png" width="180"> | <img src="docs/examples/dmg2_cam_swin.png" width="180"> |
+| <img src="docs/examples/dmg2_post.png" width="180"> | <img src="docs/examples/dmg2_pre.png" width="180"> | <img src="docs/examples/dmg_2_cam_densenet.png" width="180"> | <img src="docs/examples/dmg_2_cam_swin.png" width="180"> |
 | <img src="docs/examples/dmg3_post.png" width="180"> | <img src="docs/examples/dmg3_pre.png" width="180"> | <img src="docs/examples/dmg3_cam_densenet.png" width="180"> | <img src="docs/examples/dmg3_cam_swin.png" width="180"> |
 
 **No-damage cases**
